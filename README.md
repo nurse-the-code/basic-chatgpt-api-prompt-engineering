@@ -4,15 +4,6 @@ This is a basic example of how to use the ChatGPT API to complete a simple self-
 
 In this example, we use the ChatGPT API to ask the user for a single prompt and then generate a long short story or novella based on the prompt. This example can generate outputs up to 20 short chapters long.
 
-## Intro
-
-This project uses Python and Poetry. To run this project, you'll need the following:
-## Basic ChatGPT API Prompt Engineering Example
-
-This is a basic example of how to use the ChatGPT API to complete a simple self-directed project.
-
-In this example, we use the ChatGPT API to ask the user for a single prompt and then generate a long short story or novella based on the prompt. This example can generate outputs up to 20 short chapters long.
-
 ## Usage
 
 This project uses Python and Poetry. To run this project, you'll need the following:
@@ -74,7 +65,7 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 This project serves as a foundation and there are numerous ways in which it can be extended and improved. Here are some possible directions for future development:
 
-## Implement Text Streaming
+### Implement Text Streaming
 
 At present, the script holds off until the full response is fetched from the OpenAI API. This leads to a somewhat sluggish and disjointed user experience, particularly as we're leveraging the prowess of GPT-4 for output generation. To enhance the user experience, let's incorporate text streaming from OpenAI. This way, we can dynamically display the response in segments, in real-time as they are received from OpenAI.
 
