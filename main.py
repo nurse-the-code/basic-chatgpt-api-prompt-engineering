@@ -2,13 +2,7 @@ import os
 import json
 import openai
 
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
 openai.organization = os.environ.get("OPENAI_ORG_ID")
-# TODO: Replace with your environmental variable for your OpenAI API key
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 
