@@ -4,7 +4,7 @@ This is a basic example of how to use the ChatGPT API to complete a simple self-
 
 In this example, we use the ChatGPT API to ask the user for a single prompt and then generate a long short story or novella based on the prompt. This example can generate outputs up to 20 short chapters long.
 
-## Usage
+## Intro
 
 This project uses Python and Poetry. To run this project, you'll need the following:
 ## Basic ChatGPT API Prompt Engineering Example
@@ -19,6 +19,7 @@ This project uses Python and Poetry. To run this project, you'll need the follow
 
 - Python 3.9 or later
 - Poetry, a Python dependency management tool
+- Access to OpenAI's GPT-4 API
 
 ### Setting Up the Environment
 
@@ -55,7 +56,7 @@ This project uses Python and Poetry. To run this project, you'll need the follow
 
 ### Configurations
 
-This project uses the OpenAI ChatGPT API. You need to set your OpenAI API key and Organization ID as environment variables to authenticate with the API. You can set the environment variables as follows:
+This project uses the OpenAI ChatGPT API. You need to set your OpenAI API key and Organization ID as environment variables to authenticate with the API. Please be aware that you will need access to the GPT-4 model. You can set the environment variables as follows:
 
 ```sh
 export OPENAI_ORG_ID="your-organization-id-here"
@@ -72,6 +73,10 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 ## Future Directions
 
 This project serves as a foundation and there are numerous ways in which it can be extended and improved. Here are some possible directions for future development:
+
+## Implement Text Streaming
+
+At present, the script holds off until the full response is fetched from the OpenAI API. This leads to a somewhat sluggish and disjointed user experience, particularly as we're leveraging the prowess of GPT-4 for output generation. To enhance the user experience, let's incorporate text streaming from OpenAI. This way, we can dynamically display the response in segments, in real-time as they are received from OpenAI.
 
 ### Convert to a Flask App with Material UI Frontend
 
